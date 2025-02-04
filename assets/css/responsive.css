@@ -1,0 +1,133 @@
+/* BELOW 1200px */
+
+@media (max-width:75em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/* BELOW 1000px  */
+
+@media (max-width:62.5em) {
+    .container {
+        grid-template-rows: 7rem 80vh min-content 40vw repeat(3, min-content);
+        grid-template-columns: 6rem minmax(6rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(6rem, 1fr);
+    }
+
+    .sidebar {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    .home {
+        grid-column: 1/9;
+    }
+
+    .realtors {
+        grid-column: 9/-1;
+    }
+
+    .features {
+        grid-column: 2/11;
+    }
+
+    .testi_picture {
+        grid-column: 1/7;
+    }
+
+    .real-estate_cards {
+        grid-column: 2/11;
+    }
+
+    .gallery {
+        grid-column: 1/12;
+    }
+
+    .footer {
+        grid-column: 1/12;
+    }
+
+    .navigation_block {
+        width: 100%;
+        height: 7rem;
+        transition: height 0.3s ease-in-out 0.4s;
+    }
+
+    .navigation_block-active {
+        height: 100%;
+    }
+}
+
+/* BELOW 8000px */
+
+@media (max-width:50em) {
+    .container {
+        grid-template-rows: 7rem min-content repeat(2, min-content) 80vw repeat(4, min-content);
+    }
+
+    .home {
+        grid-column: 1/-1;
+    }
+
+    .realtors {
+        grid-column: 1/-1;
+    }
+
+    .realtors_list {
+        grid-template-columns: repeat(3, auto max-content);
+    }
+
+    .testi_picture {
+        grid-column: 1/-1;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .testi_img_btm {
+        grid-column: 1/6;
+    }
+
+    .testi_img_up {
+        grid-row: 4/5;
+        width: 100%;
+    }
+
+    .testi_content {
+        grid-column: 1/-1;
+    }
+
+    .footer_list {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* BELOW 600px */
+
+@media (max-width:37.5em) {
+
+    .home {
+        padding: 4rem 5rem 5rem 5rem;
+    }
+
+    .realtors_list {
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .features {
+        padding: 10rem 0;
+    }
+
+    .real-estate_cards {
+        padding: 10rem 0;
+    }
+
+    .footer {
+        padding: 5rem;
+    }
+
+    .home_base_logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 3rem;
+    }
+}
